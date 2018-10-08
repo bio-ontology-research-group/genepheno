@@ -1,5 +1,5 @@
 # genepheno
-this repository contains text mined gene-phenotype data and tools that can be utilized to extract data.
+this repository contains text mined gene-phenotype data and scripts used to mine the text data.
 
 merged.human.mouse.TM.extracts+NPMI.txt.zip
 This file contains text mined gene-phenotype associations.
