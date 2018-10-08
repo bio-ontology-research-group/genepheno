@@ -58,7 +58,7 @@ close IN;
 #}
 
 
-open IN, "/home/kafkass/Projects/phenomenet/mod.phenomenet.HP.SuperClasses.txt" or die "cannot open the ontology file";
+open IN, "mod.phenomenet.HP.SuperClasses.txt" or die "cannot open the ontology file";
 #HP:0001293      HP:0000707##HP:0000234##HP:0045010##
 while ($line=<IN>)
 {
@@ -74,7 +74,7 @@ $parents{$subclass}=$parent;
 close IN;
 
 
-open IN, "/home/kafkass/Projects/phenomenet/mod.phenomenet.MP.SuperClasses.txt" or die "cannot open the ontology file";
+open IN, "mod.phenomenet.MP.SuperClasses.txt" or die "cannot open the ontology file";
 #HP:0003850      MP:0009250##HP:0011844##HP:0011842##MP:0005508##
 while ($line=<IN>)
 {
