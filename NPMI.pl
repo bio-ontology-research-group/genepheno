@@ -9,7 +9,6 @@ my ($line, @arr,@arr1, @tmp, $i, $key, $key2,$k);
 my %pair1=();
 my %pair2=();
 my %pair3=();
-my %pair4=();
 my $total=0;
 my $count=0;
 
@@ -59,8 +58,6 @@ else
 $pair3{$gene_sympthom}=$occurence;
 
 $total=$total+$occurence;
-
-$pair4{$gene_sympthom}=$occurencePerArticle;
 
 
 }
