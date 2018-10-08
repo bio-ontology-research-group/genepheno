@@ -24,7 +24,7 @@ chop $line; $count=0;
 @arr=split('\t', $line);
 
 my $gene_sympthom = $arr[0];
-my $occurencePerArticle=$arr[2];
+my $nof_pmc=$arr[2];
 my $occurence = $arr[1];
 @arr1=split('###',$gene_sympthom);
 my $gene=$arr1[0]."###".$arr1[1];
