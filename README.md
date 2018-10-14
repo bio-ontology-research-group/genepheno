@@ -2,7 +2,9 @@
 This repository contains text mined gene-phenotype data and scripts used to mine the text data.
 
 The Workflow consists of following steps:
+
 STEP1. Annotate Full text PMC articles by employing Whatizit with gene/protein and phenotype names 
+
 STEP2. Extract distict gene/protein -- phenotype pairs from the annotated text
 
 Whatizit pipeline is not publicly available, so we cannot provide any script for these two steps. However, we provide all the gene-phenotype pairs extracted by using this pipeline:
