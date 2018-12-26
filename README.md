@@ -5,6 +5,7 @@ The Workflow consists of following steps:
 
 STEP1. Annotate Full text PMC articles by employing Whatizit with gene/protein and phenotype names 
 
+
 STEP2. Extract distict gene/protein -- phenotype pairs from the annotated text
 
 Whatizit pipeline is not publicly available, so we cannot provide any script for these two steps. However, we provide all the gene-phenotype pairs extracted by using this pipeline:
@@ -24,7 +25,9 @@ Follow these steps to merge the two files:
 1.open a terminal and change the path to the project that you downloaded
 
 2.cat merged.human.mouse.TM.extracts_part1.txt merged.human.mouse.TM.extracts_part2.txt > merged.human.mouse.TM.extracts.txt
- 
+
+
+
 STEP3. Expand the extracted pairs based on the equivalent as well as class relations of the phenotypes in phenomenet (covering phenotypes from HP and MP).
 
 OntologybasedExpansion.pl
@@ -61,6 +64,7 @@ Help:
 perl OntologybasedExpansion.pl -h  OR  perl OntologybasedExpansion.pl -help 
 
 
+
 STEP4. Calculate NPMI value of the text mined associations.
 
 NPMI.pl
@@ -92,12 +96,43 @@ Help:
 perl NPMI.pl -h  OR  perl NPMI.pl -help 
 
 
+
 STEP5. Find an optimal threshold for selecting the gene-phenotype pairs
 
 We applied an ontology based semantic similarity analysis to obtain the optinal thresold for selecting the gene-phenotype extracts. For each given gene, we rank the phenotypes associated with this gene based on NPMI value and experiment the generated set of pairs for its success in predicting the genes with known their phenotypes from MGI and HPO. 
 
-  
-STEP6. Pick the set of gene-phenotype pairs with the optimal rank and apply it to predict gene-disease associations based on the phenotypic similarity of genes and diseases.
+createRankedSets.pl
+
+Use this script to generate ranked lists. These lists will cover the gene-phenotype extracts upto the provided rank threshold.  
+
+Required input file is:
+
+merged.human.mouse.TM.extracts.expanded+NPMI.txt
+
+This file contains gene-phenotype extracts with their NPMI values. See STEP4 for how to generate it.
+
+How to run the createRankedSets.pl script:
+
+ 1.  open a terminal and change the path to the project
+ 
+ 2.  perl createRankedSets.pl N >merged.human.mouse.TM.extracts.expanded+NPMI.rankN.txt
+ 
+N is a number between 1 and maximum no of phenotypes extracted for the genes having the largest set of phenotypes
+
+Output:
+
+It will be saved in a file named "merged.human.mouse.TM.extracts.expanded+NPMI.rankN.txt"
+
+Help:
+
+perl createRankedSets.pl -h  OR  perl createRankedSets.pl -help 
+
+
+How to select the optimal rank:
+
+You can follow the steps in https://github.com/bio-ontology-research-group/similarityonMGI
+
+STEP6. You can pick the set of gene-phenotype pairs with the optimal rank (obtained in STEP 5) and apply it to predict gene-disease associations based on the phenotypic similarity of genes and diseases. This step illustrates an application for our gene-phenotype extraction method.
 
 Scripts for semantic similarity analysis (used in STEP5 and STEP6) can be found from here:
 https://github.com/bio-ontology-research-group/similarityonMGI
