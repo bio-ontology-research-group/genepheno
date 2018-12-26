@@ -79,3 +79,8 @@ STEP6. Pick the set of gene-phenotype pairs with the optimal rank and apply it t
 
 Scripts for semantic similarity analysis can be found from here:
 https://github.com/bio-ontology-research-group/similarityonMGI
+
+
+Technical Issues:
+
+contact senay.kafkas@kaust.edu.sa
