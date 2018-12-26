@@ -9,6 +9,26 @@ my %parents;
 
 $cnt=0;
 
+if( $ARGV[0] eq '-h' || $ARGV[0] eq '-help')
+{
+help();
+exit;
+}
+
+
+sub help { print "\nThere are required input files in order to run this script. These are: \n\n (1) merged.human.mouse.TM.extracts.txt \n This file contains gene-phenotype extracts \n\n (2) HP_MP_equivalentClasses.txt\n
+This file contains which Human Phenotype ontology (HP) class corresponds to which Mammalian Phenotype ontology (MP) class. This information is used to propagate the extracts to their equivalent classes.\n
+ (3)mod.phenomenet.HP.SuperClasses.txt and (4)mod.phenomenet.MP.SuperClasses.txt\n
+These files contain the information on class - superclass relations extracted from the HP and MP ontologies. This information is used to propagate the extracts to their superclasses.\n
+How to run the OntologybasedExpansion.pl script:\n\n
+ 1.  open a terminal and change the path to the project\n
+ 2.  perl OntologybasedExpansion.pl >merged.human.mouse.TM.extracts.expanded.txt\n
+Output will be saved in a file named \"merged.human.mouse.TM.extracts.expanded.txt\"\n\n";
+}
+
+
+
+
 open IN, "HP_MP_equivalentClasses.txt" or die "cannot open HP_MP_equivalentClasses.txt";
 while ($line=<IN>)
 {
@@ -182,5 +202,4 @@ foreach $key (keys %pair1)
 @arr3=split('#', $pair1{$key});
 print $key."\t".$arr3[0]."\t".$arr3[1]."\n";
 }
-
 
