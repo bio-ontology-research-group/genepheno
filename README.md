@@ -12,7 +12,7 @@ Whatizit pipeline is not publicly available, so we cannot provide any script for
 merged.human.mouse.TM.extracts.expanded+NPMI_partX.txt
 This file contains text mined gene-phenotype associations which are extracted based on the Whatizit text mining pipeline.
 Data format:
-MGI-gene-ID###Enrez-mosue-gene-ID_#_Entrez-Human-ID###Phenotype_ID\tNPMI-score
+MGI-gene-ID###Entrez-mosue-gene-ID_#_Entrez-Human-ID###Phenotype_ID\tNPMI-score
 
 The data is provided in 4 parts due to the size limitation by github. When you download, please merge these files into a single file and named it as merged.human.mouse.TM.extracts.expanded+NPMI.txt. This is a necessary preparation for running the scripts below.
 
@@ -22,6 +22,9 @@ OntologybasedExpansion.pl
 use this script for performing the ontology based expansion.
 
 Necessary input files are :
+merged.human.mouse.TM.extracts.txt
+This file contains gene-phenotype extracts obtained in STEP2.
+
 HP_MP_equivalentClasses.txt
 This file contains which Human Phenotype ontology (HP) class corresponds to which Mammalian Phenotype ontology (MP) class.
 This information is used to propagate the extracts to their quivalent classes.
