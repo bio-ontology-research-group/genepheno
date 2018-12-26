@@ -56,6 +56,11 @@ Output:
 
 It will be saved in a file named "merged.human.mouse.TM.extracts.expanded.txt"
 
+Help:
+
+perl OntologybasedExpansion.pl -h  OR  perl OntologybasedExpansion.pl -help 
+
+
 STEP4. Calculate NPMI value of the text mined associations.
 
 NPMI.pl
