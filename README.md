@@ -130,12 +130,11 @@ perl createRankedSets.pl -h  OR  perl createRankedSets.pl -help
 
 How to select the optimal rank:
 
-You can follow the steps in https://github.com/bio-ontology-research-group/similarityonMGI
+You can follow the steps (GENE-GENE similarity) in https://github.com/bio-ontology-research-group/similarityonMGI
 
 STEP6. You can pick the set of gene-phenotype pairs with the optimal rank (obtained in STEP 5) and apply it to predict gene-disease associations based on the phenotypic similarity of genes and diseases. This step illustrates an application for our gene-phenotype extraction method.
 
-Scripts for semantic similarity analysis (used in STEP5 and STEP6) can be found from here:
-https://github.com/bio-ontology-research-group/similarityonMGI
+You can follow the steps (GENE-DISEASE prediction) in https://github.com/bio-ontology-research-group/similarityonMGI
 
 
 Technical Issues:
