@@ -71,8 +71,7 @@ Required input file is:
 
 merged.human.mouse.TM.extracts.expanded.txt 
 
-This file contains gene-phenotype extracts expanded based on class-equivalent class and class-superclass relations in PhenomeNet.
-
+This file contains gene-phenotype extracts expanded based on class-equivalent class and class-superclass relations in PhenomeNet. Please see STEP3 above on how to generate it. 
 
 How to run the NPMI.pl script:
 
