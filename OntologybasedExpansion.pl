@@ -9,7 +9,7 @@ my %parents;
 
 $cnt=0;
 
-open IN, "HP_MP_equivalentClasses.txt" or die "cannot open equivalent info";
+open IN, "HP_MP_equivalentClasses.txt" or die "cannot open HP_MP_equivalentClasses.txt";
 while ($line=<IN>)
 {
 chop $line; $line=~s/HP:/HP_/g; $line=~s/MP:/MP_/g;
@@ -25,7 +25,7 @@ close IN;
 
 
 
-open IN, "merged.human.mouse.TM.extracts.txt" or die "cannot open the ontology file";
+open IN, "merged.human.mouse.TM.extracts.txt" or die "cannot open merged.human.mouse.TM.extracts.txt";
 #MGI:103223	22346_#_7428	HP_0002668	129	77
 while ($line=<IN>)
 {
@@ -58,7 +58,7 @@ close IN;
 #}
 
 
-open IN, "mod.phenomenet.HP.SuperClasses.txt" or die "cannot open the ontology file";
+open IN, "mod.phenomenet.HP.SuperClasses.txt" or die "cannot open mod.phenomenet.HP.SuperClasses.txt";
 #HP:0001293      HP:0000707##HP:0000234##HP:0045010##
 while ($line=<IN>)
 {
@@ -74,7 +74,7 @@ $parents{$subclass}=$parent;
 close IN;
 
 
-open IN, "mod.phenomenet.MP.SuperClasses.txt" or die "cannot open the ontology file";
+open IN, "mod.phenomenet.MP.SuperClasses.txt" or die "cannot open mod.phenomenet.MP.SuperClasses.txt";
 #HP:0003850      MP:0009250##HP:0011844##HP:0011842##MP:0005508##
 while ($line=<IN>)
 {
