@@ -14,7 +14,7 @@ This file contains text mined gene-phenotype associations which are extracted ba
 Data format:
 MGI-gene-ID###Enrez-mosue-gene-ID_#_Entrez-Human-ID###Phenotype_ID\tNPMI-score
 
-The data is provided in 4 parts due to the size limitation by github and has to be merged into a single file and named as merged.human.mouse.TM.extractsexpanded+NPMI.txt in order to run the scripts below.
+The data is provided in 4 parts due to the size limitation by github and when you download, please merged them into a single file named as merged.human.mouse.TM.extractsexpanded+NPMI.txt. this is a necessary preparation for running the scripts below.
 
 STEP3. Expand the extracted pairs based on the equivalent as well as class relations of the phenotypes in phenomenet.
 
