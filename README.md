@@ -67,11 +67,32 @@ NPMI.pl
 
 use this script for performing the NPMI calculation.
 
-Output:
-merged.human.mouse.TM.extracts.expanded+NPMI.txt
+Required input file is:
 
-Data format:
+merged.human.mouse.TM.extracts.expanded.txt 
+
+This file contains gene-phenotype extracts expanded based on class-equivalent class and class-superclass relations in PhenomeNet.
+
+
+How to run the NPMI.pl script:
+
+ 1.  open a terminal and change the path to the project\n
+ 2.  perl NPMI.pl >merged.human.mouse.TM.extracts.expanded+NPMI.txt\n
+
+
+Output:
+
+It will be saved in the file named "merged.human.mouse.TM.extracts.expanded+NPMI.txt"
+
+Output data format:
+
 MGI-gene-ID###Entrez-mosue-gene-ID_#_Entrez-Human-ID###Phenotype_ID\tNPMI-score
+
+Help:
+
+perl NPMI.pl -h  OR  perl NPMI.pl -help 
+
+
 
 STEP5. For each given gene, rank the phenotypes associated with this gene based on NPMI value and experiment the generated set of pairs for its success in predicting the genes with known their phenotypes from MGI and HPO
   
