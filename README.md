@@ -9,12 +9,12 @@ STEP2. Extract distict gene/protein -- phenotype pairs from the annotated text
 
 Whatizit pipeline is not publicly available, so we cannot provide any script for these two steps. However, we provide all the gene-phenotype pairs extracted by using this pipeline:
 
-merged.human.mouse.TM.extractsexpanded+NPMI_partX.txt
+merged.human.mouse.TM.extracts.expanded+NPMI_partX.txt
 This file contains text mined gene-phenotype associations which are extracted based on the Whatizit text mining pipeline.
 Data format:
 MGI-gene-ID###Enrez-mosue-gene-ID_#_Entrez-Human-ID###Phenotype_ID\tNPMI-score
 
-The data is provided in 4 parts due to the size limitation by github and when you download, please merged them into a single file named as merged.human.mouse.TM.extractsexpanded+NPMI.txt. this is a necessary preparation for running the scripts below.
+The data is provided in 4 parts due to the size limitation by github. When you download, please merge these files into a single file and named it as merged.human.mouse.TM.extracts.expanded+NPMI.txt. This is a necessary preparation for running the scripts below.
 
 STEP3. Expand the extracted pairs based on the equivalent as well as class relations of the phenotypes in phenomenet.
 
