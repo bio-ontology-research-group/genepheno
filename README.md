@@ -22,8 +22,8 @@ The data is provided in 2 parts due to the size limitation by github. When you d
 Follow these steps to merge the two files:
 
 1.open a terminal and change the path to the project that you downloaded
-2.Keep the necessary input files in the same folder
-3.cat merged.human.mouse.TM.extracts_part1.txt merged.human.mouse.TM.extracts_part2.txt > merged.human.mouse.TM.extracts.txt
+
+2.cat merged.human.mouse.TM.extracts_part1.txt merged.human.mouse.TM.extracts_part2.txt > merged.human.mouse.TM.extracts.txt
  
 STEP3. Expand the extracted pairs based on the equivalent as well as class relations of the phenotypes in phenomenet (covering phenotypes from HP and MP).
 
@@ -49,8 +49,8 @@ These files contain the information on class - superclass relations extracted fr
 how to run the OntologybasedExpansion.pl script:
 
 1. open a terminal and change the path to the project that you downloaded
-2. Keep the necessary input files in the same folder
-3. perl OntologybasedExpansion.pl >merged.human.mouse.TM.extracts.expanded.txt
+
+2. perl OntologybasedExpansion.pl >merged.human.mouse.TM.extracts.expanded.txt
 
 Output:
 
