@@ -1,5 +1,5 @@
 # genepheno
-This repository contains text mined gene-phenotype data and scripts used to mine the text data.
+This repository contains text mined gene-phenotype data and scripts used to analyse the extracts.
 
 The Workflow consists of following steps:
 
