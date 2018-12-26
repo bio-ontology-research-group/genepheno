@@ -27,6 +27,7 @@ OntologybasedExpansion.pl
 use this script for performing the ontology based expansion.
 
 Required input files are :
+
 merged.human.mouse.TM.extracts.txt 
 This file contains gene-phenotype extracts obtained in STEP2. Please see above. 
 
