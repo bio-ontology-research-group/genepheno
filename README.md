@@ -19,8 +19,9 @@ The data is provided in 4 parts due to the size limitation by github. When you d
 STEP3. Expand the extracted pairs based on the equivalent as well as class relations of the phenotypes in phenomenet (covering phenotypes from HP and MP).
 
 OntologybasedExpansion.pl
+use this script for performing the ontology based expansion.
 
-use this script for the ontology based expansion. Necessary input files are :
+Necessary input files are :
 HP_MP_equivalentClasses.txt
 This file contains which Human Phenotype ontology (HP) class corresponds to which Mammalian Phenotype ontology (MP) class.
 This information is used to propagate the extracts to their quivalent classes.
@@ -31,7 +32,9 @@ These files contain the information on class - superclass relations extracted fr
 To run the script:
 1. open a terminal and change the path to the project that you downloaded
 2. Keep the necessary input files in the same folder
-3. perl OntologybasedExpansion.pl
+3. perl OntologybasedExpansion.pl >merged.human.mouse.TM.extracts.expanded.txt
+
+output will be saved in a file named "merged.human.mouse.TM.extracts.expanded.txt"
 
 STEP4. Calculate NPMI value of the text mined associations.
 
