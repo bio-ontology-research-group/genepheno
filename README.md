@@ -92,12 +92,14 @@ Help:
 perl NPMI.pl -h  OR  perl NPMI.pl -help 
 
 
+STEP5. Find an optimal threshold for selecting the gene-phenotype pairs
 
-STEP5. For each given gene, rank the phenotypes associated with this gene based on NPMI value and experiment the generated set of pairs for its success in predicting the genes with known their phenotypes from MGI and HPO
+We applied an ontology based semantic similarity analysis to obtain the optinal thresold for selecting the gene-phenotype extracts. For each given gene, we rank the phenotypes associated with this gene based on NPMI value and experiment the generated set of pairs for its success in predicting the genes with known their phenotypes from MGI and HPO. 
+
   
 STEP6. Pick the set of gene-phenotype pairs with the optimal rank and apply it to predict gene-disease associations based on the phenotypic similarity of genes and diseases.
 
-Scripts for semantic similarity analysis can be found from here:
+Scripts for semantic similarity analysis (used in STEP5 and STEP6) can be found from here:
 https://github.com/bio-ontology-research-group/similarityonMGI
 
 
