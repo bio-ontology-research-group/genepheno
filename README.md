@@ -26,7 +26,7 @@ We provide all the gene-phenotype pairs extracted from PMC Full text articles by
 
 merged.human.mouse.TM.extracts_partX.txt
 
-This file contains text mined gene-phenotype associations which are extracted based on the Whatizit text mining pipeline. (X is the part number)
+This file contains text mined gene-phenotype associations which are extracted based on the Whatizit text mining pipeline. (X is the part number, this file consists of two parts)
 
 Data format:
 
