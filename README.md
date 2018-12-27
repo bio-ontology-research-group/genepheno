@@ -16,10 +16,10 @@ a file containing a bunch of annotated PMC Open Access full text articles in gz 
 
 How to run the Gene-phenoCo-occExtraction.pl script:
 
-1.  open a terminal and change the path to the project\n
-2.  perl Gene-phenoCo-occExtraction.pl InputFile.gz >TM.extracts.txt\n
+1.  open a terminal and change the path to the project
+2.  perl Gene-phenoCo-occExtraction.pl InputFile.gz >TM.extracts.txt
 
-Output will be saved in a file named "TM.extracts.txt";
+Output will be saved in a file named "TM.extracts.txt"
 
 
 We provide all the gene-phenotype pairs extracted from PMC Full text articles by using Whatizit:
