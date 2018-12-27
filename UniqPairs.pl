@@ -23,8 +23,8 @@ exit;
 
 
 sub help { print "\nRequired input is a file containing gene-phenotype extracts \n
-Inpit Format:PMCID\tPMID\tGeneID\tGeneName\tphenotypeID\tphenotypeName\tsentence_containing_co-occurrence \n\n 
-How to run the Gene-phenoCo-occExtraction.pl script:\n\n
+Input Format:PMCID\tPMID\tGeneID\tGeneName\tphenotypeID\tphenotypeName\tsentence_containing_co-occurrence \n\n 
+How to run the UniqPair.pl script:\n\n
  1.  open a terminal and change the path to the project\n
  2.  perl UniqPairs.pl TM.extracts.txt >TM.extracts+Freq.txt\n
 Output will be saved in a file named \"TM.extracts+Freq.txt\"\n
