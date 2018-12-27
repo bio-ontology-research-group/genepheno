@@ -9,6 +9,18 @@ See https://github.com/bio-ontology-research-group/whatizit on how to annotate a
 
 **STEP2.** Extract distict gene/protein -- phenotype pairs from the annotated text
 
+Required input is:
+
+a file containing a bunch of annotated PMC Open Access full text articles in gz format (e.g. InputFile.gz) (obtained in STEP1)
+
+
+How to run the Gene-phenoCo-occExtraction.pl script:
+
+1.  open a terminal and change the path to the project\n
+2.  perl Gene-phenoCo-occExtraction.pl InputFile.gz >TM.extracts.txt\n
+
+Output will be saved in a file named "TM.extracts.txt";
+
 
 We provide all the gene-phenotype pairs extracted from PMC Full text articles by using Whatizit:
 
