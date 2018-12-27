@@ -37,7 +37,7 @@ a file containing gene-phenotype extracts (e.g. TM.extracts.txt)
 
 Input Format:PMCID\tPMID\tGeneID\tGeneName\tphenotypeID\tphenotypeName\tsentence_containing_co-occurrence
 
-How to run the UniqPair.pl script:
+How to run the UniqPairs.pl script:
 
 1.  open a terminal and change the path to the project
 
@@ -45,7 +45,7 @@ How to run the UniqPair.pl script:
 
 Output will be saved in a file named "TM.extracts+Freq.txt"
 
-Output Format:GeneID#PhenotypeID\tGeneName#PhenotypeName\tNof_co-ocurrences\tnof_articles_containingC-ocurr\tPMCIDList
+Output Format:GeneID#PhenotypeID\tGeneName#PhenotypeName\tNof_co-ocurrences\tnof_articles_containingC-occurr\tPMCIDList
 
 Help:
 
@@ -59,7 +59,7 @@ This file contains text mined gene-phenotype associations which are extracted ba
 
 Data format:
 
-MGI-gene-ID\tEntrez-mosue-gene-ID_#_Entrez-Human-ID\tPhenotype_ID\tno_of_co-ocurrence\tno_of_articles
+MGI-gene-ID\tEntrez-mosue-gene-ID_#_Entrez-Human-ID\tPhenotype_ID\tno_of_co-occurrence\tno_of_articles
 
 The data is provided in 2 parts due to the size limitation by github. When you download, please merge these files into a single file and named it as merged.human.mouse.TM.extracts.txt. This is a necessary preparation for running the perl script in STEP3.
 
