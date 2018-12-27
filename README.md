@@ -5,14 +5,16 @@ The Workflow consists of following steps:
 
 **STEP1.** Annotate Full text PMC articles by employing Whatizit with gene/protein and phenotype names 
 
+See https://github.com/bio-ontology-research-group/whatizit on how to annotate articles with Whatizit.
 
 **STEP2.** Extract distict gene/protein -- phenotype pairs from the annotated text
 
-Whatizit pipeline is not publicly available, so we cannot provide any script for these two steps. However, we provide all the gene-phenotype pairs extracted by using this pipeline:
+
+We provide all the gene-phenotype pairs extracted from PMC Full text articles by using Whatizit:
 
 merged.human.mouse.TM.extracts_partX.txt
 
-This file contains text mined gene-phenotype associations which are extracted based on the Whatizit text mining pipeline.
+This file contains text mined gene-phenotype associations which are extracted based on the Whatizit text mining pipeline. (X is the part number)
 
 Data format:
 
