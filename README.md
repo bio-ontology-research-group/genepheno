@@ -3,10 +3,10 @@ This repository contains text mined gene-phenotype data and scripts used to anal
 
 The Workflow consists of following steps:
 
-STEP1. Annotate Full text PMC articles by employing Whatizit with gene/protein and phenotype names 
+**STEP1.** Annotate Full text PMC articles by employing Whatizit with gene/protein and phenotype names 
 
 
-STEP2. Extract distict gene/protein -- phenotype pairs from the annotated text
+**STEP2.** Extract distict gene/protein -- phenotype pairs from the annotated text
 
 Whatizit pipeline is not publicly available, so we cannot provide any script for these two steps. However, we provide all the gene-phenotype pairs extracted by using this pipeline:
 
@@ -28,7 +28,7 @@ Follow these steps to merge the two files:
 
 
 
-STEP3. Expand the extracted pairs based on the equivalent as well as class relations of the phenotypes in phenomenet (covering phenotypes from HP and MP).
+**STEP3.** Expand the extracted pairs based on the equivalent as well as class relations of the phenotypes in phenomenet (covering phenotypes from HP and MP).
 
 OntologybasedExpansion.pl
 
@@ -65,7 +65,7 @@ perl OntologybasedExpansion.pl -h  OR  perl OntologybasedExpansion.pl -help
 
 
 
-STEP4. Calculate NPMI value of the text mined associations.
+**STEP4.** Calculate NPMI value of the text mined associations.
 
 NPMI.pl
 
@@ -97,7 +97,7 @@ perl NPMI.pl -h  OR  perl NPMI.pl -help
 
 
 
-STEP5. Find an optimal threshold for selecting the gene-phenotype pairs
+**STEP5.** Find an optimal threshold for selecting the gene-phenotype pairs
 
 We applied an ontology based semantic similarity analysis to obtain the optinal thresold for selecting the gene-phenotype extracts. For each given gene, we rank the phenotypes associated with this gene based on NPMI value and experiment the generated set of pairs for its success in predicting the genes with known their phenotypes from MGI and HPO. 
 
@@ -132,7 +132,7 @@ How to select the optimal rank:
 
 You can follow the steps (GENE-GENE similarity) in https://github.com/bio-ontology-research-group/similarityonMGI
 
-STEP6. You can pick the set of gene-phenotype pairs with the optimal rank (obtained in STEP 5) and apply it to predict gene-disease associations based on the phenotypic similarity of genes and diseases. This step illustrates an application for our gene-phenotype extraction method.
+**STEP6.** You can pick the set of gene-phenotype pairs with the optimal rank (obtained in STEP 5) and apply it to predict gene-disease associations based on the phenotypic similarity of genes and diseases. This step illustrates an application for our gene-phenotype extraction method.
 
 You can follow the steps (GENE-DISEASE prediction) in https://github.com/bio-ontology-research-group/similarityonMGI
 
