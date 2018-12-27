@@ -8,7 +8,7 @@ The Workflow consists of following steps:
 See https://github.com/bio-ontology-research-group/whatizit on how to annotate articles with Whatizit.
 
 **STEP2.** Extract distict gene/protein -- phenotype pairs and their frequencies from the annotated text
-(1). Extract sentences containing gene-phenotype co-occurrences:
+*(1).* Extract sentences containing gene-phenotype co-occurrences:
 
 Required input is:
 
@@ -23,7 +23,13 @@ How to run the Gene-phenoCo-occExtraction.pl script:
 
 Output will be saved in a file named "TM.extracts.txt"
 
-(2). Find co-occurrence frequencies of the extracted pairs
+Output format: PMCID\tPMID\tGeneID\tGeneName\tphenotypeID\tphenotypeName\tsentence_containing_co-occurrence
+
+Help:
+
+perl Gene-phenoCo-occExtraction.pl -h OR perl Gene-phenoCo-occExtraction.pl -help
+
+*(2).* Find co-occurrence frequencies of the extracted pairs
 
 Required input is:
 
@@ -40,6 +46,10 @@ How to run the UniqPair.pl script:
 Output will be saved in a file named "TM.extracts+Freq.txt"
 
 Output Format:GeneID#PhenotypeID\tGeneName#PhenotypeName\tNof_co-ocurrences\tnof_articles_containingC-ocurr\tPMCIDList
+
+Help:
+
+perl uniqPairs.pl -h OR perl uniqPairs.pl -help
 
 We provide all the gene-phenotype pairs and their co-occurence frequencies extracted from PMC Full text articles by using Whatizit (through STEP1&2):
 
