@@ -19,7 +19,7 @@ How to run the Gene-phenoCo-occExtraction.pl script:
 
 1.  open a terminal and change the path to the project
 
-2.  perl Gene-phenoCo-occExtraction.pl InputFile.gz >TM.extracts.txt
+2.  `perl Gene-phenoCo-occExtraction.pl InputFile.gz >TM.extracts.txt`
 
 Output will be saved in a file named "TM.extracts.txt"
 
