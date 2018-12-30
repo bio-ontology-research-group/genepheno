@@ -183,3 +183,6 @@ You can follow the steps (GENE-DISEASE prediction) in https://github.com/bio-ont
 Technical Issues:
 
 contact senay.kafkas@kaust.edu.sa
+
+
+Licence: Cc-BY-NC. Available for academic use only.
