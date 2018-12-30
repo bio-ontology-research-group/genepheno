@@ -41,7 +41,7 @@ How to run the UniqPairs.pl script:
 
 1.  open a terminal and change the path to the project
 
-2.  perl UniqPairs.pl TM.extracts.txt >TM.extracts+Freq.txt
+2.  `perl UniqPairs.pl TM.extracts.txt >TM.extracts+Freq.txt`
 
 Output will be saved in a file named "TM.extracts+Freq.txt"
 
@@ -49,7 +49,7 @@ Output Format:GeneID#PhenotypeID\tGeneName#PhenotypeName\tNof_co-ocurrences\tnof
 
 Help:
 
-perl uniqPairs.pl -h OR perl uniqPairs.pl -help
+`perl uniqPairs.pl -h OR perl uniqPairs.pl -help`
 
 We provide all the gene-phenotype pairs and their co-occurence frequencies extracted from PMC Full text articles by using Whatizit (through STEP1&2):
 
@@ -94,9 +94,9 @@ These files contain the information on class - superclass relations extracted fr
 
 how to run the OntologybasedExpansion.pl script:
 
-1. open a terminal and change the path to the project that you downloaded
+1.  open a terminal and change the path to the project that you downloaded
 
-2. perl OntologybasedExpansion.pl >merged.human.mouse.TM.extracts.expanded.txt
+2. `perl OntologybasedExpansion.pl >merged.human.mouse.TM.extracts.expanded.txt`
 
 Output:
 
@@ -104,7 +104,7 @@ It will be saved in a file named "merged.human.mouse.TM.extracts.expanded.txt"
 
 Help:
 
-perl OntologybasedExpansion.pl -h  OR  perl OntologybasedExpansion.pl -help 
+`perl OntologybasedExpansion.pl -h  OR  perl OntologybasedExpansion.pl -help` 
 
 
 
@@ -122,8 +122,8 @@ This file contains gene-phenotype extracts expanded based on class-equivalent cl
 
 How to run the NPMI.pl script:
 
- 1.  open a terminal and change the path to the project\n
- 2.  perl NPMI.pl >merged.human.mouse.TM.extracts.expanded+NPMI.txt\n
+ 1.  open a terminal and change the path to the project
+ 2. `perl NPMI.pl >merged.human.mouse.TM.extracts.expanded+NPMI.txt`
 
 
 Output:
@@ -136,7 +136,7 @@ MGI-gene-ID###Entrez-mosue-gene-ID_#_Entrez-Human-ID###Phenotype_ID\tNPMI-score
 
 Help:
 
-perl NPMI.pl -h  OR  perl NPMI.pl -help 
+`perl NPMI.pl -h  OR  perl NPMI.pl -help` 
 
 
 
@@ -158,7 +158,7 @@ How to run the createRankedSets.pl script:
 
  1.  open a terminal and change the path to the project
  
- 2.  perl createRankedSets.pl N >merged.human.mouse.TM.extracts.expanded+NPMI.rankN.txt
+ 2.  `perl createRankedSets.pl N >merged.human.mouse.TM.extracts.expanded+NPMI.rankN.txt`
  
 N is a number between 1 and maximum no of phenotypes extracted for the genes having the largest set of phenotypes
 
@@ -168,7 +168,7 @@ It will be saved in a file named "merged.human.mouse.TM.extracts.expanded+NPMI.r
 
 Help:
 
-perl createRankedSets.pl -h  OR  perl createRankedSets.pl -help 
+`perl createRankedSets.pl -h  OR  perl createRankedSets.pl -help` 
 
 
 How to select the optimal rank:
