@@ -185,4 +185,4 @@ Technical Issues:
 contact senay.kafkas@kaust.edu.sa
 
 
-Licence: Cc-BY-NC. Available for academic use only.
+Licence: CC-BY.
