@@ -67,7 +67,7 @@ Follow these steps to merge the two files:
 
 1.open a terminal and change the path to the project that you downloaded
 
-2.cat merged.human.mouse.TM.extracts_part1.txt merged.human.mouse.TM.extracts_part2.txt > merged.human.mouse.TM.extracts.txt
+2.`cat merged.human.mouse.TM.extracts_part1.txt merged.human.mouse.TM.extracts_part2.txt > merged.human.mouse.TM.extracts.txt`
 
 
 
