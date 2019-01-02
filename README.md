@@ -3,7 +3,7 @@ This repository contains text mined gene-phenotype data and scripts used to anal
 
 The Workflow consists of following steps:
 
-**STEP1.** Annotate Full text PMC articles by employing Whatizit with gene/protein and phenotype names 
+**STEP1.** Annotate Full-text PMC articles by employing Whatizit with gene/protein and phenotype names 
 
 See https://github.com/bio-ontology-research-group/whatizit on how to annotate articles with Whatizit.
 
@@ -142,7 +142,7 @@ Help:
 
 **STEP5.** Find an optimal threshold for selecting the gene-phenotype pairs
 
-We applied an ontology based semantic similarity analysis to obtain the optinal thresold for selecting the gene-phenotype extracts. For each given gene, we rank the phenotypes associated with this gene based on NPMI value and experiment the generated set of pairs for its success in predicting the genes with known their phenotypes from MGI and HPO. 
+We applied an ontology based semantic similarity analysis to obtain the optimal threshold for selecting the gene-phenotype extracts. For each given gene, we rank the phenotypes associated with this gene based on NPMI value and experiment the generated set of pairs for its success in predicting the genes with known their phenotypes from MGI and HPO. 
 
 createRankedSets.pl
 
