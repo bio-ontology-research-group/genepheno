@@ -1,18 +1,18 @@
 # genepheno
 This repository contains text mined gene-phenotype data and scripts used to analyse the extracts.
 
-The Workflow consists of following steps:
+The Workflow consists of the following steps:
 
 **STEP1.** Annotate Full-text PMC articles by employing Whatizit with gene/protein and phenotype names 
 
 See https://github.com/bio-ontology-research-group/whatizit on how to annotate articles with Whatizit.
 
-**STEP2.** Extract distict gene/protein -- phenotype pairs and their frequencies from the annotated text
+**STEP2.** Extract distinct gene/protein -- phenotype pairs and their frequencies from the annotated text
 *(1).* Extract sentences containing gene-phenotype co-occurrences:
 
 Required input is:
 
-a file containing a bunch of annotated PMC Open Access full text articles in gz format (e.g. InputFile.gz) (obtained in STEP1)
+a file containing a bunch of annotated PMC Open Access full-text articles in gz format (e.g. InputFile.gz) (obtained in STEP1)
 
 
 How to run the Gene-phenoCo-occExtraction.pl script:
@@ -21,7 +21,7 @@ How to run the Gene-phenoCo-occExtraction.pl script:
 
 2.  `perl Gene-phenoCo-occExtraction.pl InputFile.gz >TM.extracts.txt`
 
-Output will be saved in a file named "TM.extracts.txt"
+The output will be saved in a file named "TM.extracts.txt"
 
 Output format: PMCID\tPMID\tGeneID\tGeneName\tphenotypeID\tphenotypeName\tsentence_containing_co-occurrence
 
@@ -43,15 +43,15 @@ How to run the UniqPairs.pl script:
 
 2.  `perl UniqPairs.pl TM.extracts.txt >TM.extracts+Freq.txt`
 
-Output will be saved in a file named "TM.extracts+Freq.txt"
+The output will be saved in a file named "TM.extracts+Freq.txt"
 
-Output Format:GeneID#PhenotypeID\tGeneName#PhenotypeName\tNof_co-ocurrences\tnof_articles_containingC-occurr\tPMCIDList
+Output Format:GeneID#PhenotypeID\tGeneName#PhenotypeName\tNof_co-occurrences\tnof_articles_containingC-occurr\tPMCIDList
 
 Help:
 
 `perl uniqPairs.pl -h OR perl uniqPairs.pl -help`
 
-We provide all the gene-phenotype pairs and their co-occurence frequencies extracted from PMC Full text articles by using Whatizit (through STEP1&2):
+We provide all the gene-phenotype pairs and their co-occurrence frequencies extracted from PMC Full-text articles by using Whatizit (through STEP1&2):
 
 merged.human.mouse.TM.extracts_partX.txt
 
@@ -61,7 +61,7 @@ Data format:
 
 MGI-gene-ID\tEntrez-mosue-gene-ID_#_Entrez-Human-ID\tPhenotype_ID\tno_of_co-occurrence\tno_of_articles
 
-The data is provided in 2 parts due to the size limitation by github. When you download, please merge these files into a single file and named it as merged.human.mouse.TM.extracts.txt. This is a necessary preparation for running the perl script in STEP3.
+The data is provided in 2 parts due to the size limitation by github. When you download, please merge these files into a single file and named it as merged.human.mouse.TM.extracts.txt. This is a necessary preparation for running the Perl script in STEP3.
 
 Follow these steps to merge the two files:
 
@@ -75,7 +75,7 @@ Follow these steps to merge the two files:
 
 OntologybasedExpansion.pl
 
-use this script for performing the ontology based expansion.
+use this script for performing the ontology-based expansion.
 
 Required input files are :
 
@@ -85,8 +85,8 @@ This file contains gene-phenotype extracts obtained in STEP2. Please see above.
 
 HP_MP_equivalentClasses.txt
 
-This file contains which Human Phenotype ontology (HP) class corresponds to which Mammalian Phenotype ontology (MP) class.
-This information is used to propagate the extracts to their quivalent classes.
+This file contains which Human Phenotype Ontology (HP) class corresponds to which Mammalian Phenotype Ontology (MP) class.
+This information is used to propagate the extracts to their equivalent classes.
 
 mod.phenomenet.HP.SuperClasses.txt and mod.phenomenet.MP.SuperClasses.txt
 
@@ -108,13 +108,13 @@ Help:
 
 
 
-**STEP4.** Calculate Normalised Pointwise Mutual Information (NPMI) value of the text mined associations.
+**STEP4.** Calculate the Normalised Pointwise Mutual Information (NPMI) value of the text mined associations.
 
 NPMI.pl
 
 use this script for performing the NPMI calculation.
 
-Required input file is:
+The required input file is:
 
 merged.human.mouse.TM.extracts.expanded.txt 
 
@@ -142,11 +142,11 @@ Help:
 
 **STEP5.** Find an optimal threshold for selecting the gene-phenotype pairs
 
-We applied an ontology based semantic similarity analysis to obtain the optimal threshold for selecting the gene-phenotype extracts. For each given gene, we rank the phenotypes associated with this gene based on NPMI value and experiment the generated set of pairs for its success in predicting the genes with known their phenotypes from MGI and HPO. 
+We applied an ontology-based semantic similarity analysis to obtain the optimal threshold for selecting the gene-phenotype extracts. For each given gene, we rank the phenotypes associated with this gene based on NPMI value and experiment the generated set of pairs for its success in predicting the genes with known their phenotypes from MGI and HPO. 
 
 createRankedSets.pl
 
-Use this script to generate ranked lists. These lists will cover the gene-phenotype extracts upto the provided rank threshold.  
+Use this script to generate ranked lists. These lists will cover the gene-phenotype extracts up to the provided rank threshold.  
 
 Required input file is:
 
