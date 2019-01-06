@@ -108,7 +108,7 @@ Help:
 
 
 
-**STEP4.** Calculate NPMI value of the text mined associations.
+**STEP4.** Calculate Normalised Pointwise Mutual Information (NPMI) value of the text mined associations.
 
 NPMI.pl
 
@@ -178,6 +178,7 @@ You can follow the steps (GENE-GENE similarity) in https://github.com/bio-ontolo
 and carry out an analysis to find the optimal NPMI rank at which the model recovers known genes accurately by using the text mining extracts.
 
 *merged.human.mouse.TM.extracts.expanded+NPMI.rank25.txt*
+Data format: MGI-gene-ID\tEntrez-mosue-gene-ID_#_Entrez-Human-ID\tPhenotype_ID\tNPMI
 
 This file contains the gene-phenotype associations at NPMI rank=25 which is the optimal rank based on our gene recovery experiments on the MGI and HPO datasets.
 
