@@ -175,6 +175,12 @@ How to select the optimal rank:
 
 You can follow the steps (GENE-GENE similarity) in https://github.com/bio-ontology-research-group/similarityonMGI
 
+and carry out an analysis to find the optimal NPMI rank at which the model recovers known genes accurately by using the text mining extracts.
+
+*merged.human.mouse.TM.extracts.expanded+NPMI.rank25.txt*
+
+This file contains the gene-phenotype associations at NPMI rank=25 which is the optimal rank based on our gene recovery experiments on the MGI and HPO datasets.
+
 **STEP6.** You can pick the set of gene-phenotype pairs with the optimal rank (obtained in STEP 5) and apply it to predict gene-disease associations based on the phenotypic similarity of genes and diseases. This step illustrates an application for our gene-phenotype extraction method.
 
 You can follow the steps (GENE-DISEASE prediction) in https://github.com/bio-ontology-research-group/similarityonMGI
