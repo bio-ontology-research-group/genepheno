@@ -1,5 +1,12 @@
-# genepheno
+# GenePheno: textmining gene-to-phenotype associations
+
 This repository contains text mined gene-phenotype data and scripts used to analyse the extracts.
+
+## Data
+
+* Initial release (Jan 6, 2019): https://zenodo.org/record/2532614
+
+## Textmining workflow
 
 The Workflow consists of the following steps:
 
