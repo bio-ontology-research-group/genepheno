@@ -4,6 +4,8 @@ This repository contains text mined gene-phenotype data and scripts used to anal
 
 ## Data
 
+We will execute our workflow periodically (every 6 months) and release updated data files on Zenodo.
+
 * Initial release (Jan 6, 2019): https://zenodo.org/record/2532614
 
 ## Textmining workflow
